@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Suryoday</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <!-- <link rel="stylesheet" href="css/style.css"> -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css" />
+      <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+      <style type="text/css">
+            img{
+                  max-width: 100%;
+            }
+            .btn{
+                  border: none;
+                  padding:.3rem 2rem;
+                  border-radius: 100px;
+                  color: #fff;
+                  font-weight: bold;
+            }
+            .orange_btn{
+                  background: orange;
+            }
+            .blue_btn{
+                  background: blue;
+            }
+            .violet_btn{
+                  background: violet;
+            }
+            button{
+                  margin: 0 .3rem;
+            }
+      </style>
+</head>
+<body>
+      <section>
+            <div class="frame text-center" id="frame">
+                  <div class="by">
+                        <img src="images/demo/by.png">
+                  </div>
+                  <div class="blue">
+                        <img src="images/demo/blue.png">
+                  </div>
+                  <div class="orange">
+                        <img src="images/demo/orange.png">
+                  </div>
+                  <div class="violet">
+                        <img src="images/demo/voilet.png">
+                  </div>
+                  <!--  -->
+                  <h4>Select Color</h4>
+                  <div class="d-flex" style="justify-content: center;">
+                  <button class="orange_btn btn">Orange </button>
+                  <button class="blue_btn btn">Blue </button>
+                  <button class="violet_btn btn">Violet </button>
+                  </div>
+
+            </div>
+      </section>
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/index.js"></script>
+      <script type="text/javascript">
+             $(document).ready(function() {
+                   hideAllcolor()
+
+                     $('.orange_btn').on('click', function(){
+
+                        showcolor('orange');
+                     });
+                     // 
+                      $('.blue_btn').on('click', function(){
+
+                        showcolor('blue');
+                     });
+
+                     // 
+                     $('.violet_btn').on('click', function(){
+
+                        showcolor('violet');
+                     });
+                  });
+
+            function showcolor(partname) {
+                  switch (partname) {
+
+                  case 'orange':
+                        hideAllcolor()
+                        $('.orange').show();
+                        $('.by').hide();
+                     break;
+
+                  case 'blue':
+                        hideAllcolor()
+                        $('.blue').show();
+                        $('.orange').hide();
+                     break;
+
+                  case 'violet':
+                        hideAllcolor()
+                        $('.violet').show();
+                        $('.blue').hide();
+                     break;
+                  }
+            }  
+            function hideAllcolor() {
+                       $('.blue').hide();
+                       $('.orange').hide();
+                       $('.violet').hide();
+            }
+      </script>
+</body>
+</html>
