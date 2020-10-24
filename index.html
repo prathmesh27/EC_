@@ -1,735 +1,1413 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>ECare</title>
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/responsive.css">
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="stylesheet" type="text/css" href="css/slick.css" />
-      <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-      <style>
-         .fa-heart {
-         color: #F85C05;
-         cursor: pointer;
-         }
-      </style>
-   </head>
-   <body>
-      <div class="overlay2">&nbsp;</div>
-      <header>
-        <div class="bb uh">
-            <div class="upper-header container">
-               <div class="l-header">
-                  <a href="">Call us: <span>80979070</span></a>
-                  <a href="">Mail: <span>info@gmail.com</span></a>
-               </div>
-               <div class="r-header">
-                  <a href="">
-                  <i class="fas fa-sign-in-alt"></i>
-                  </a>
-                  <a href="">
-                  <i class="fas fa-user"></i>
-                  </a>
-               </div>
-               <div class="mobile-cart">
-                <a href="" class="cart">
-                        <i class="fas fa-cart-plus"></i>
-                        <div class="qty">
-                           9
-                        </div>
-                </a>
-                <a href="" class="cart">
-                        <i class="far fa-heart" style="color: #8c8c8c"></i>
-                        <div class="qty">
-                           9
-                        </div>
-                     </a>
-               </div>
-            </div>
-        </div>
-        <div class="menu-sec">
-            <div class="container">
-               <nav class="navbar navbar-expand-lg navbar-light ">
-                  <a class="navbar-brand" href="#">
-                  <img src="images/logo.png" alt="">
-                  </a>
-                  <button class="navbar-toggler triggerSidebar2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse desktop-nav" id="navbarSupportedContent">
-                     <ul class="navbar-nav m-auto">
-                        <li class="nav-item ">
-                           <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">About us</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Testimonial</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="cart-section desktop-nav">
-                     <form action="" role="search" class="search-form">    
-                        <input type="search" name="q" class="search-text" placeholder="Search..." autocomplete="off">
-                     </form>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>ECare</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <style>
+            .fa-heart {
+            color: #F85C05;
+            cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="overlay2">&nbsp;</div>
+        <header>
+            <div class="bb uh">
+                <!-- <div class="upper-header container">
+                    <div class="l-header">
+                       <a href="">Call us: <span>80979070</span></a>
+                       <a href="">Mail: <span>info@gmail.com</span></a>
+                    </div>
+                    <div class="r-header">
+                       <a href="">
+                       <i class="fas fa-sign-in-alt"></i>
+                       </a>
+                       <a href="">
+                       <i class="fas fa-user"></i>
+                       </a>
+                    </div>
+                    <div class="mobile-cart">
                      <a href="" class="cart">
-                        <i class="fas fa-cart-plus"></i>
-                        <div class="qty">
-                           9
-                        </div>
+                             <i class="fas fa-cart-plus"></i>
+                             <div class="qty">
+                                9
+                             </div>
                      </a>
                      <a href="" class="cart">
-                        <i class="far fa-heart" style="color: #8c8c8c"></i>
-                        <div class="qty">
-                           9
-                        </div>
-                     </a>
-                  </div>
-               </nav>
+                             <i class="far fa-heart" style="color: #8c8c8c"></i>
+                             <div class="qty">
+                                9
+                             </div>
+                          </a>
+                    </div>
+                    </div> -->
+                <div class="marquee" style="    padding: 10px 0 0;
+                    margin: 0;
+                    font-size: 14px;
+                    background: #495E3D;
+                    color:#fff;
+                    }">
+                    <marquee>🔔Big Super Saver Week: Upto 30% Off On Monthly Regimes. Limited Time Offer! 🔔</marquee>
+                </div>
             </div>
-        </div>
-         <!--Mobile Sidebar  -->
-         <div class="Sidenavbar">
+            <div class="menu-sec" style="background: #c5e6e6">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler triggerSidebar2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse desktop-nav" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> Solutions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-section desktop-nav">
+                            <form action="" role="search" class="search-form">    
+                                <input type="search" name="q" class="search-text" placeholder="Search..." autocomplete="off">
+                            </form>
+                            <a href="" class="cart">
+                                <i class="fas fa-cart-plus"></i>
+                                <div class="qty">
+                                    9
+                                </div>
+                            </a>
+                            <a href="" class="cart">
+                                <i class="far fa-heart" style="color: #222"></i>
+                                <div class="qty">
+                                    9
+                                </div>
+                            </a>
+                            <a href="" class="cart">
+                                <i class="fas fa-user-alt"  style="color: #222"></i>
+                               
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--Mobile Sidebar  -->
+            <div class="Sidenavbar">
                 <div class="header">
-                  <a href="">Menu</a>
-                  <a class="hideSidebar2 label label-default"> <i class="fa fa-times-circle"></i>
+                    <a href="">Menu</a>
+                    <a class="hideSidebar2 label label-default"> <i class="fa fa-times-circle"></i>
                     Close</a>
                 </div>
-                    <form class="form-inline">
-                        <input class="form-control border-none" type="search" placeholder="Search" aria-label="Search">
-                    </form>
+                <form class="form-inline">
+                    <input class="form-control border-none" type="search" placeholder="Search" aria-label="Search">
+                </form>
                 <ul>
-                  <li><a href="" class="nb">Home</a></li>
-                  <li><a href="">Products</a></li>
-                  <li><a href="">About us</a></li>
-                  <li><a href="" class="nb">Testimonial</a></li>
+                    <li><a href="" class="nb">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="" class="nb">Testimonial</a></li>
                 </ul>
-  
-         </div>
-      </header>
-      <main>
-         <section>
-            <div class="container-fluid p-0">
-               <div class="carosuel-section">
-                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="50000">
-                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="carosuel-captions">
-                              <div class="product-caption">
-                                 <h1><span>Wonder</span> Hair Oil</h1>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.
-                                 </p>
-                                 <a href="" class="buy-btn">Shop Now</a>
-                              </div>
-                              <div class="img-sec">
-                                 <img src="images/img-removebg-preview.png" class="product-img">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item ">
-                           <div class="carosuel-captions">
-                              <div class="product-caption">
-                                 <h1><span>Wonder</span> Hair Oil</h1>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.
-                                 </p>
-                                 <a href="" class="buy-btn">Shop Now</a>
-                              </div>
-                              <div class="img-sec">
-                                 <img src="images/img-removebg-preview.png" class="product-img">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item ">
-                           <div class="carosuel-captions">
-                              <div class="product-caption">
-                                 <h1><span>Wonder</span> Hair Oil</h1>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.
-                                 </p>
-                                 <a href="" class="buy-btn">Shop Now</a>
-                              </div>
-                              <div class="img-sec">
-                                 <img src="images/img-removebg-preview.png" class="product-img">
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
             </div>
-         </section>
-         <section>
-            <div class="container">
-               <div class="featured top-pro">
-                  <div class="heading text-center ">
-                     <h1 style="justify-content: center;">Products</h1>
-                  </div>
-                  <!--  -->
-                  <div class="row m-0">
-                     <!--  -->
-                     <div class="col-md-4">
-                        <div class="Products-sec p-0">
-                           <div class="Products-sec-img">
-                              <img src="images/img-removebg-preview.png">
+        </header>
+        <main>
+            <section>
+                <div class="container-fluid p-0">
+                    <div class="carosuel-section">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+                           <!--  <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol> -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active carosuel_1">
+                                    <div  class="row align-items-center ">
+                                        <div class="col-md-7 col-6" style="height: 100vh">
+                                        </div>
+                                        <div class="col-md-5 col-6">
+                                            <div class="hero-content  text-center ">
+                                                <h2 class="animate__animated animate__fadeInRight animate__delay-1s">HAIR OIL</h2>
+                                                <h1 class="animate__animated animate__fadeInUp animate__delay-2s">FOR GLOSSY <br>  AND <br>STYLISH HAIR</h1>
+                                                <a class="btn btn-round btn-lg btn-theme btn_ animate__animated animate__fadeInLeft animate__delay-3s" href="" tabindex="0">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item  carosuel_2">
+                                    <div  class="row align-items-center ">
+                                        <div class="col-md-5 col-6">
+                                            <div class="hero-content  text-center ">
+                                                <h2 class="animate__animated animate__fadeInRight animate__delay-1s">HAIR OIL</h2>
+                                                <h1 class="animate__animated animate__fadeInUp animate__delay-2s">FOR GLOSSY <br>  AND <br>STYLISH HAIR</h1>
+                                                <a class="btn btn-round btn-lg btn-theme btn_ animate__animated animate__fadeInLeft animate__delay-3s" href="" tabindex="0">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-6">
+                                            <div class="hero-image hero-image-0  ">
+                                                <img class="lazyload" data-src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                               <span class="sr-only">Previous</span>
+                             </a>
+                             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                               <span class="sr-only">Next</span>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container  py-fix " >
+                    <div class="why-ecalre why_">
+                        <div class="heading__" data-aos="fade-up"  data-aos-duration="1000">
+                            <h1>ECare</h1>
+                            <div class="heading_back">
+                                ECare
+                            </div>
+                        </div>
+                        <div class="row align-items-center" data-aos="fade-up"  data-aos-duration="1000">
+                            <div class="col-md-5 mr-auto order-1 order-md-2 col-12 mb-30">
+                                <div class="about-image video-sec" style="width: 100%">
+                                    <video src="images/video.mp4" style="width: 100%;" controls="" poster="images/slider-1.jpg"></video>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-12 order-2 order-md-1 mb-30">
+                                <div class="about-content" style="background: #fff;margin-right:  -70px;">
+                                    <div class="rows">
+                                        <div class="">
+                                            <img src="images/icon1.webp">
+                                        </div>
+                                        <div class="con">
+                                            <h2>No Chemicals</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rows">
+                                        <div class="">
+                                            <img src="images/icon2.webp">
+                                        </div>
+                                        <div class="con">
+                                            <h2>Traditional Method</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rows">
+                                        <div class="">
+                                            <img src="images/icon3.webp">
+                                        </div>
+                                        <div class="con">
+                                            <h2> Natural Aroma</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="display: none;">
+                <div class="container py-fix">
+                    <div class="featured top-pro">
+                        <div class="heading text-center ">
+                            <h1 style="justify-content: center;">Products</h1>
+                        </div>
+                        <!--  -->
+                        <div class="row m-0">
+                            <!--  -->
+                            <div class="col-md-4">
+                                <div class="Products-sec p-0">
+                                    <div class="Products-sec-img">
+                                        <img src="images/img-removebg-preview.png">
+                                    </div>
+                                    <div class="favourite" id="heart">
+                                        <i class="far fa-heart" aria-hidden="true" ></i>
+                                    </div>
+                                    <div class="Products-sec-content">
+                                        <h2>Wonder Hair Oil</h2>
+                                        <div class="price">
+                                            <p class="og">&#x20B9;200</p>
+                                            <p class="can"><strike>&#x20B9;240</strike></p>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
+                                            <button class="buy">
+                                            Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="Products-sec p-0">
+                                    <div class="Products-sec-img">
+                                        <img src="images/img-removebg-preview.png">
+                                    </div>
+                                    <div class="favourite" id="heart">
+                                        <i class="far fa-heart" aria-hidden="true" ></i>
+                                    </div>
+                                    <div class="Products-sec-content">
+                                        <h2>Wonder Hair Oil</h2>
+                                        <div class="price">
+                                            <p class="og">&#x20B9;200</p>
+                                            <p class="can"><strike>&#x20B9;240</strike></p>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
+                                            <button class="buy">
+                                            Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="Products-sec p-0">
+                                    <div class="Products-sec-img">
+                                        <img src="images/img-removebg-preview.png">
+                                    </div>
+                                    <div class="favourite" id="heart">
+                                        <i class="far fa-heart" aria-hidden="true" ></i>
+                                    </div>
+                                    <div class="Products-sec-content">
+                                        <h2>Wonder Hair Oil</h2>
+                                        <div class="price">
+                                            <p class="og">&#x20B9;200</p>
+                                            <p class="can"><strike>&#x20B9;240</strike></p>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
+                                            <button class="buy">
+                                            Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center my-2 w-100">
+                                <button class="btn">View More</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </section>
+            <section >
+                <div class="featured ft mt-fix">
+                <div class="container">
+                    <div class="heading__"  data-aos="fade-up"  data-aos-duration="1000">
+                        <h1>Solutions</h1>
+                        <div class="heading_back">
+                            Solutions
+                        </div>
+                    </div>
+                    <div class="Products-carosuel mb-5"  data-aos="fade-up"  data-aos-duration="1000">
+                        <div class="Products-sec col-4 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/solu1.svg" alt="shampoo" style="height:300px;">
+                                        <div class="py-2">
+                                            <h2 style="font-size: 20px;">Scalp &amp; Hair Shampoo</h2>
+                                            <button class="btn_ btn" tabindex="0">Shop Now    </button>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="about-content">
+                                            <h2>Scalp &amp; Hair Shampoo</h2>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <button class="btn_ btn" tabindex="0">SHOP NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/warszawianka_Corolla_2.svg" alt="shampoo" style="height:300px;">
+                                        <div class="py-2">
+                                            <h2 style="font-size: 20px;">Scalp &amp; Hair Shampoo</h2>
+                                            <button class="btn_ btn" tabindex="0">Shop Now    </button>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="about-content">
+                                            <h2>Scalp &amp; Hair Shampoo</h2>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <button class="btn_ btn" tabindex="0">SHOP NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/solu3.svg" alt="shampoo" style="height:300px;">
+                                        <div class="py-2">
+                                            <h2 style="font-size: 20px;">Scalp &amp; Hair Shampoo</h2>
+                                            <button class="btn_ btn" tabindex="0">Shop Now    </button>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="about-content">
+                                            <h2>Scalp &amp; Hair Shampoo</h2>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <button class="btn_ btn" tabindex="0">SHOP NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/solu1.svg" alt="shampoo" style="height:300px;">
+                                        <div class="py-2">
+                                            <h2 style="font-size: 20px;">Scalp &amp; Hair Shampoo</h2>
+                                            <button class="btn_ btn" tabindex="0">Shop Now    </button>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="about-content">
+                                            <h2>Scalp &amp; Hair Shampoo</h2>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <button class="btn_ btn" tabindex="0">SHOP NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/solu1.svg" alt="shampoo" style="height:300px;">
+                                        <div class="py-2">
+                                            <h2 style="font-size: 20px;">Scalp &amp; Hair Shampoo</h2>
+                                            <button class="btn_ btn" tabindex="0">Shop Now    </button>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="about-content">
+                                            <h2>Scalp &amp; Hair Shampoo</h2>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                            <button class="btn_ btn" tabindex="0">SHOP NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="featured ft best-seller mt-fix">
+                <div class="container">
+                    <div class="heading__" data-aos="fade-up"  data-aos-duration="1000">
+                        <h1>Best Seller</h1>
+                        <div class="heading_back">
+                            Best Seller
+                        </div>
+                    </div>
+                    <div class="Products-carosuel mb-5" data-aos="fade-up"  data-aos-duration="1000">
+                        <div class="Products-sec col-4 p-0">
+                            <div class="Products-sec-img zoomWrapper">
+                                <img src="images/img-removebg-preview.png" class="img-hover">
+                            </div>
+                            <div class="Products-sec-content">
+                                <div class="price">
+                                    <p class="og">&#x20B9;200</p>
+                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                </div>
+                                <h2>Wonder Hair Oil</h2>
+                            </div>
+                            <div class="Cart-sec-hover">
+                                <a href=" " title="Add to cart">
+                                <i class="fas fa-cart-plus"></i>
+                                </a>      
+                                <a href=" "  title="Add to wishlist">
+                                <i class="far fa-heart" style="color: #222"></i>
+                                </a>
+                                <a href=" " title="Quick view">
+                                <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="Products-sec-img zoomWrapper">
+                                <img src="images/img-removebg-preview.png" class="img-hover">
+                            </div>
+                            <div class="Products-sec-content">
+                                <div class="price">
+                                    <p class="og">&#x20B9;200</p>
+                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                </div>
+                                <h2>Wonder Hair Oil</h2>
+                            </div>
+                            <div class="Cart-sec-hover">
+                                <a href=" " title="Add to cart">
+                                <i class="fas fa-cart-plus"></i>
+                                </a>      
+                                <a href=" "  title="Add to wishlist">
+                                <i class="far fa-heart" style="color: #222"></i>
+                                </a>
+                                <a href=" " title="Quick view">
+                                <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="Products-sec-img zoomWrapper">
+                                <img src="images/img-removebg-preview.png" class="img-hover">
+                            </div>
+                            <div class="Products-sec-content">
+                                <div class="price">
+                                    <p class="og">&#x20B9;200</p>
+                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                </div>
+                                <h2>Wonder Hair Oil</h2>
+                            </div>
+                            <div class="Cart-sec-hover">
+                                <a href=" " title="Add to cart">
+                                <i class="fas fa-cart-plus"></i>
+                                </a>      
+                                <a href=" "  title="Add to wishlist">
+                                <i class="far fa-heart" style="color: #222"></i>
+                                </a>
+                                <a href=" " title="Quick view">
+                                <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="Products-sec-img zoomWrapper">
+                                <img src="images/img-removebg-preview.png" class="img-hover">
+                            </div>
+                            <div class="Products-sec-content">
+                                <div class="price">
+                                    <p class="og">&#x20B9;200</p>
+                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                </div>
+                                <h2>Wonder Hair Oil</h2>
+                            </div>
+                            <div class="Cart-sec-hover">
+                                <a href=" " title="Add to cart">
+                                <i class="fas fa-cart-plus"></i>
+                                </a>      
+                                <a href=" "  title="Add to wishlist">
+                                <i class="far fa-heart" style="color: #222"></i>
+                                </a>
+                                <a href=" " title="Quick view">
+                                <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="Products-sec col-4 p-0">
+                            <div class="Products-sec-img zoomWrapper">
+                                <img src="images/img-removebg-preview.png" class="img-hover">
+                            </div>
+                            <div class="Products-sec-content">
+                                <div class="price">
+                                    <p class="og">&#x20B9;200</p>
+                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                </div>
+                                <h2>Wonder Hair Oil</h2>
+                            </div>
+                            <div class="Cart-sec-hover">
+                                <a href=" " title="Add to cart">
+                                <i class="fas fa-cart-plus"></i>
+                                </a>      
+                                <a href=" "  title="Add to wishlist">
+                                <i class="far fa-heart" style="color: #222"></i>
+                                </a>
+                                <a href=" " title="Quick view">
+                                <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="Tab-section" data-aos="fade-up"  data-aos-duration="1000">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center;">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Featured Products</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Popular Products</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">New Products</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content my-3" id="myTabContent">
+                           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="best-seller">
+                                    <div class="Products-carosuel mb-5">
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                            </div>
-                           <div class="favourite" id="heart">
-                              <i class="far fa-heart" aria-hidden="true" ></i>
+                           <div class="tab-pane fade show " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="best-seller">
+                                    <div class="Products-carosuel mb-5">
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                            </div>
-                           <div class="Products-sec-content">
-                              <h2>Wonder Hair Oil</h2>
-                              <div class="price">
-                                 <p class="og">&#x20B9;200</p>
-                                 <p class="can"><strike>&#x20B9;240</strike></p>
-                              </div>
-                              <div class="add-cart">
-                                  <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                                 <button class="buy">
-                                 Buy Now
-                                 </button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="Products-sec p-0">
-                           <div class="Products-sec-img">
-                              <img src="images/img-removebg-preview.png">
-                           </div>
-                           <div class="favourite" id="heart">
-                              <i class="far fa-heart" aria-hidden="true" ></i>
-                           </div>
-                           <div class="Products-sec-content">
-                              <h2>Wonder Hair Oil</h2>
-                              <div class="price">
-                                 <p class="og">&#x20B9;200</p>
-                                 <p class="can"><strike>&#x20B9;240</strike></p>
-                              </div>
-                              <div class="add-cart">
-                                 <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                                 <button class="buy">
-                                 Buy Now
-                                 </button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="Products-sec p-0">
-                           <div class="Products-sec-img">
-                              <img src="images/img-removebg-preview.png">
-                           </div>
-                           <div class="favourite" id="heart">
-                              <i class="far fa-heart" aria-hidden="true" ></i>
-                           </div>
-                           <div class="Products-sec-content">
-                              <h2>Wonder Hair Oil</h2>
-                              <div class="price">
-                                 <p class="og">&#x20B9;200</p>
-                                 <p class="can"><strike>&#x20B9;240</strike></p>
-                              </div>
-                              <div class="add-cart">
-                                 <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                                 <button class="buy">
-                                 Buy Now
-                                 </button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                      <div class="text-center my-2 w-100">
-                        <button class="btn">View More</button>
-                      </div>
-                  </div>
-                  <!--  -->
-               </div>
-            </div>
-         </section>
-         <section>
-            <div class="featured ft">
-            <div class="container">
-               <div class="heading">
-                  <h1>Featured Products</h1>
-               </div>
-               <div class="Products-carosuel mb-5">
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                              <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                           </div>
-                     </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" class="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                               <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" class="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                           <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                         </div>
-                     </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                          <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>  </div>
-                       </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                           <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                     </div>
-                     </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section>
-            <div class="featured ft">
-            <div class="container">
-               <div class="heading">
-                  <h1>Best Seller</h1>
-               </div>
-               <div class="Products-carosuel mb-5">
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                     <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                     </div>
-                     </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                    <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                     </div>
-                     </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                     <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                     </div>
-                     </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                     <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                     </div>
-                     </div>
-                     </a>
-                  </div>
-                  <div class="Products-sec col-4 p-0">
-                     <a href="">
-                        <div class="Products-sec-img">
-                           <img src="images/img-removebg-preview.png">
-                        </div>
-                        <div class="favourite" id="heart">
-                           <i class="far fa-heart" aria-hidden="true" ></i>
-                        </div>
-                        <div class="Products-sec-content">
-                           <h2>Wonder Hair Oil</h2>
-                           <div class="price">
-                              <p class="og">&#x20B9;200</p>
-                              <p class="can"><strike>&#x20B9;240</strike></p>
-                           </div>
-                           <div class="add-cart">
-                          <button class="buy add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                     </div>
-                     </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section>
-            <div class="back">
-               <div class="Products_">
-                  <div class="heading text-center container">
-                     <h1 class="text-center">Popular Products</h1>
-                  </div>
-                  <div class="container ">
-                     <div class="Products_inner">
-                        <div class="pro-text" id="two">
-                           <h2><span>Header</span> forOil</h2>
-                           <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                           <button class="btn">Shop Now</button>
-                        </div>
-                        <div class="pro-img" id="one">
-                           <img src="images/img-removebg-preview.png" class="product-img">
-                        </div>
-                     </div>
-                     <div class="w-100 text-center">
-                       <button class="btn_">View More Products</button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section style="display:none;">
-            <div class="blog">
-               <div class="container">
-                  <div class="heading text-center">
-                     <h1 class="text-center">Blogs</h1>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-6" >
-                        <a href="" class="image-wrapper">
-                           <img src="images/blog.jpg">
-                           <div class="blog-content">
-                              <h2>Blog Header</h2>
-                              <p>Meggings blog chambray tofu pour-over. Pour-over Tumblr keffiyeh, cornhole whatever cardigan Tonx lomo. Cornhole fingerstache…</p>
-                              <div class="text-right btn">
-                        <a href="">Read More +</a>
-                        </div>
-                        </div>
-                        </a>
-                     </div>
-                     <div class="col-md-6">
-                        <a href="" class="image-wrapper">
-                           <img src="images/blog.jpg">
-                           <div class="blog-content">
-                              <h2>Blog Header</h2>
-                              <p>Meggings blog chambray tofu pour-over. Pour-over Tumblr keffiyeh, cornhole whatever cardigan Tonx lomo. Cornhole fingerstache…</p>
-                              <div class="text-right btn">
-                        <a href="">Read More +</a>
-                        </div>
-                        </div>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section>
-            <div class="testimonial">
-               <div class="container">
-                  <div class="heading">
-                     <h1 class="text-center">What our customers are saying...</h1>
-                  </div>
-                  <div class="test_">
-                     <div class="test">
-                        <img src="images/people1.png">
-                        <h2>Wenny Dellys 1</h2>
-                        <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</q>
-                        </p>
-                     </div>
-                     <div class="test">
-                        <img src="images/people1.png">
-                        <h2>Wenny Dellys 2</h2>
-                        <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</q>
-                        </p>
-                     </div>
-                     <div class="test">
-                        <img src="images/people1.png">
-                        <h2>Wenny Dellys 3</h2>
-                        <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</q>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section>
-            <div class="services">
-               <div class="container">
-                  <div class="row text-center">
-                     <div class="col-md-4">
-                        <img src="images/services1.svg">
-                        <h2>Fast Delivery</h2>
-                        <p>Free delivery on all orders</p>
-                     </div>
-                     <div class="col-md-4">
-                        <img src="images/services2.svg">
-                        <h2>Safe Payment</h2>
-                        <p>Free delivery on all orders</p>
-                     </div>
-                     <div class="col-md-4">
-                        <img src="images/services3.svg">
-                        <h2>Return Policy</h2>
-                        <p>Free delivery on all orders</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </main>
-      <footer>
-         <div class="container ">
-          <div class="upper-footer">
-            <div class="">
-                <a href="">
-                  <i class="far fa-envelope"></i>info@gmail.com
-                </a>
-                <a href=""> 
-                  <i class="fas fa-phone-alt"></i>9090 909 090
-                </a>
-            </div>
-            <div class="">
-             
-            </div>
-          </div>
-          <span class="bb"></span>
-          <div class="links">
-            <ul>
-              <li> <a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li> <a href="">Privacy Policy</a></li>
-              <li> <a href="">Terms & Condition</a></li>
-              <li><a href="">Return & Cancellation Policy</a></li>
+                           <!--  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+                            </div> -->
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
-              <li>  <a href="">Delivery Policy </a></li>
-              <li>
-            <a href="">Disclaimer</a></li>
-            </ul>          
-          </div>
-         </div>
-         <div class="copy">
-            <p>Copyright ©2020 All rights reserved </p>
-         </div>
-      </footer>
-      <script src="js/jquery-3.4.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/slick.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/index.js"></script>
-      <script type="text/javascript">
-         $('.Products-carosuel').slick({
-         dots: false,
-         arrows:true,
-         speed: 300,
-         slidesToShow: 4,
-         infinite:true,
-         prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-         nextArrow: '<button class="slide-arrow next-arrow"></button>',
-         slidesToScroll: 4,
-         responsive: [
-         {
-         breakpoint: 1024,
-         settings: {
-         slidesToShow: 3,
-         slidesToScroll: 3,
-         infinite: true,
-         dots: true
-         }
-         },
-         {
-         breakpoint: 768,
-         settings: {
-         slidesToShow: 2,
-         slidesToScroll: 2
-         }
-         },
-         {
-         breakpoint: 480,
-         settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1
-         }
-         }
-         // You can unslick at a given breakpoint now by adding:
-         // settings: "unslick"
-         // instead of a settings object
-         ]
-         });
-         
-         $('.test_').slick({
-          dots:true,
-         centerMode: true,
-         centerPadding: '80px',
-         slidesToShow: 2,
-         responsive: [
-         {
-         breakpoint: 768,
-         settings: {
-         arrows: false,
-         centerMode: true,
-         centerPadding: '40px',
-         slidesToShow: 2
-         }
-         },
-         {
-         breakpoint: 480,
-         settings: {
-         arrows: false,
-         centerMode: true,
-         centerPadding: '40px',
-         slidesToShow: 1
-         }
-         }
-         ]
-         });
-         
-         // It checks to see if the span id #heart has "liked" class, if not it run the else statement and adds the "liked" class, on a 2nd click it see that it has the "liked" class so it replaces the ihherHTML and removes class, on 3rd click it runs the else statement again cause there is no "liked" class(remomved on 2nd click).
-         
-         $(document).ready(function(){
-         $("#heart").click(function(){
-         if($("#heart").hasClass("liked")){
-         $("#heart").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
-         $("#heart").removeClass("liked");
-         }else{
-         $("#heart").html('<i class="fa fa-heart" aria-hidden="true"></i>');
-         $("#heart").addClass("liked");
-         }
-         });
-         });
-      </script>
-       <script>
-        $('.triggerSidebar2').click(function() {
-            $('.Sidenavbar').css('right', '0px')
-            $('.overlay2').css('display', 'block')
-           })
-           
-           var kori = function() {
-           $('.overlay2').css('display', 'none')
-           $('.Sidenavbar').css('right', '-405px')
-           }
-           
-           $('.hideSidebar2').click(kori)
-           $('.overlay2').click(kori)
-  </script>
-   </body>
+                                <div class="best-seller">
+                                    <div class="Products-carosuel mb-5">
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Products-sec col-4 p-0">
+                                            <div class="Products-sec-img zoomWrapper">
+                                                <img src="images/img-removebg-preview.png" class="img-hover">
+                                            </div>
+                                            <div class="Products-sec-content">
+                                                <div class="price">
+                                                    <p class="og">&#x20B9;200</p>
+                                                    <p class="can"><strike>&#x20B9;240</strike></p>
+                                                </div>
+                                                <h2>Wonder Hair Oil</h2>
+                                            </div>
+                                            <div class="Cart-sec-hover">
+                                                <a href=" " title="Add to cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                                </a>      
+                                                <a href=" "  title="Add to wishlist">
+                                                <i class="far fa-heart" style="color: #222"></i>
+                                                </a>
+                                                <a href=" " title="Quick view">
+                                                <i class="fas fa-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial text-center fade" style="opacity: 1;">
+                        <div class="container">
+                           <div class="heading white-heading" data-aos="fade-up"  data-aos-duration="1000">
+                              Testimonial
+                           </div>
+                           <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000" data-aos="fade-up"  data-aos-duration="1000">
+                              <div class="carousel-inner" role="listbox" style="padding: 0">
+                                 <div class="carousel-item">
+                                    <div class="testimonial4_slide">
+                                       <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive">
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                       <h4>Client 1</h4>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item active">
+                                    <div class="testimonial4_slide">
+                                       <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive">
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                       <h4>Client 2</h4>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <div class="testimonial4_slide">
+                                       <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive">
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                       <h4>Client 3</h4>
+                                    </div>
+                                 </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                              </a>
+                           </div>
+                        </div>
+            </section>
+            <section>   
+               <div class="container">
+                  <div class="blog">
+                           <div class="heading__" data-aos="fade-up"  data-aos-duration="1000">
+                              <h1>Blog</h1>
+                             <div class="heading_back">
+                            &nbsp;&nbsp;&nbsp;Blog
+                        </div>
+                           </div>
+                           <div class="row m-0" style="justify-content: space-between;" data-aos="fade-up"  data-aos-duration="1000">
+                              <div class="col-md-6">
+                                 <div class="blog-inner">
+                                    <div class="blog-img zoomWrapper">
+                                       <img src="images/blog.jpg" style="  " class="   blog-img">
+                                       <div class="date">
+                                          23rd OCT 2020
+                                       </div>
+                                    </div>
+                                    <div class="blog-content">
+                                       <h2>Blog Heading</h2>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="blog-inner">
+                                    <div class="blog-img zoomWrapper">
+                                       <img src="images/blog.jpg">
+                                       <div class="date">
+                                          23rd OCT 2020
+                                       </div>
+                                    </div>
+                                    <div class="blog-content">
+                                       <h2>Blog Heading</h2>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class=" my-4 text-center">
+                                 <button class="btn " href="" tabindex="0">View More</button>
+                            </div>
+                        </div>
+                     </div>
+            </section>
+            <section>   
+                  <div class="container" data-aos="fade-up"  data-aos-duration="1000">
+                     <div class="brands mb-5">
+                        <div class="text-center">
+                           <img src="images/b1.png">
+                        </div>
+                        <div class="text-center">
+                           <img src="images/b2.png">
+                        </div>
+                        <div class="text-center">
+                           <img src="images/b3.png">
+                        </div>
+                        <div class="text-center">
+                           <img src="images/b4.png">
+                        </div>
+                        <div class="text-center">
+                           <img src="images/b1.png">
+                        </div>
+                     </div>
+                  </div>
+            </section>
+            <section>   
+                  <div class="service-container" data-aos="fade-up"  data-aos-duration="1000">
+                     <div class="row ml-0 mr-0">
+                        <div class="service  col-md-3 col-12">
+                           <div class="icon" style="background-image: url(images/service-sprites8cf3.png);"></div>
+                           <div class="content">
+                              <h3>Free home delivery</h3>
+                              <p>Provide free home delivery for all product over $100</p>
+                           </div>
+                        </div>
+                        <div class="service col-md-3 col-12">
+                           <div class="icon" style="background-image: url(images/service-sprites8cf3.png);"></div>
+                           <div class="content">
+                              <h3>Quality Products</h3>
+                              <p>We ensure the product quality that is our main goal</p>
+                           </div>
+                        </div>
+                        <div class="service  col-md-3 col-12">
+                           <div class="icon" style="background-image: url(images/service-sprites8cf3.png);"></div>
+                           <div class="content">
+                              <h3>3 Days Return</h3>
+                              <p>Return product within 3 days for any product you buy</p>
+                           </div>
+                        </div>
+                        <div class="service col-md-3 col-12">
+                           <div class="icon" style="background-image: url( images/service-sprites8cf3.png);"></div>
+                           <div class="content">
+                              <h3>Online Support</h3>
+                              <p>We ensure the product quality that you can trust easily</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            </section>
+        </main>
+
+      <!--   <footer>
+            <div class="container ">
+                <div class="upper-footer">
+                    <div class="">
+                        <a href="">
+                        <i class="far fa-envelope"></i>info@gmail.com
+                        </a>
+                        <a href=""> 
+                        <i class="fas fa-phone-alt"></i>9090 909 090
+                        </a>
+                    </div>
+                    <div class="">
+                    </div>
+                </div>
+                <span class="bb"></span>
+                <div class="links">
+                    <ul>
+                        <li> <a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li> <a href="">Privacy Policy</a></li>
+                        <li> <a href="">Terms & Condition</a></li>
+                        <li><a href="">Return & Cancellation Policy</a></li>
+                        <li>  <a href="">Delivery Policy </a></li>
+                        <li>
+                            <a href="">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyright ©2020 All rights reserved </p>
+            </div>
+        </footer> -->
+        <div class="footer-top-section section bg-dark">
+                  <div class="container">
+                     <div class="footer-widget-wrap row" style="justify-content: center;">
+                        <div class="col-md-3 mb-40">
+                           <div class="footer-widget">
+                              <img src="images/logo.png" alt="">
+                              <p>We provide the best  oil all over the world. We are the worldd best store for  Oil. You can buy our</p>
+                              <p>228, East Zone, Momeno Tower, South City, India</p>
+                              <p>+12546 687 987&nbsp; / +15425 987 541</p>
+                              <p>demo@example.com ww.example.com</p>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-40">
+                           <div class="footer-widget">
+                              <h3 class="title">Quick Link</h3>
+                              <ul>
+                                 <li><a href="#">About</a></li>
+                                 <li><a href="#">All Products</a></li>
+                                 <li><a href="#">Shipping policy</a></li>
+                                 <li><a href="#">Contact</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-40">
+                           <div class="footer-widget">
+                              <h3 class="title">Information</h3>
+                              <ul>
+                                 <li><a href="#">Login</a></li>
+                                 <li><a href="#">My Account</a></li>
+                                 <li><a href="#">Terms &amp; Conditions</a></li>
+                                 <li><a href="#">Order Tracking</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-3 mb-40">
+                           <div class="footer-widget">
+                              <h3 class="title">Follow us</h3>
+                              <ul>
+                                 <li><a href="#">Facebook</a></li>
+                                 <li><a href="#">Twitter</a></li>
+                                 <li><a href="#">Instagram</a></li>
+                                 <li><a href="#">Linkedin</a></li>
+                                 <li><a href="#">Google Plus</a></li>
+                                 <li><a href="#">Youtube</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript">
+            $('.Products-carosuel2').slick({
+            dots: false,
+            arrows:true,
+            speed: 300,
+            slidesToShow: 4,
+            infinite:true,
+            prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+            nextArrow: '<button class="slide-arrow next-arrow"></button>',
+            slidesToScroll: 4,
+            responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+            ]
+            });
+
+            $('.Products-carosuel').slick({
+            dots: false,
+            arrows:true,
+            speed: 300,
+            slidesToShow: 4,
+            infinite:true,
+            prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+            nextArrow: '<button class="slide-arrow next-arrow"></button>',
+            slidesToScroll: 4,
+            responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+            ]
+            });
+            
+            $('.test_').slick({
+             dots:true,
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 2,
+            responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+            }
+            }
+            ]
+            });
+                $('.brands').slick({
+
+               autoplay: true,
+                 autoplaySpeed: 2000, 
+             dots:true,
+            slidesToShow: 4,
+            responsive: [
+            {
+            breakpoint: 2268,
+            settings: {
+            arrows: false,
+            slidesToShow: 3,slidesToShow: 3,
+            slidesToScroll: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            slidesToShow: 1
+            }
+            }
+            ]
+            });
+
+            
+            // It checks to see if the span id #heart has "liked" class, if not it run the else statement and adds the "liked" class, on a 2nd click it see that it has the "liked" class so it replaces the ihherHTML and removes class, on 3rd click it runs the else statement again cause there is no "liked" class(remomved on 2nd click).
+            
+            $(document).ready(function(){
+            $("#heart").click(function(){
+            if($("#heart").hasClass("liked")){
+            $("#heart").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+            $("#heart").removeClass("liked");
+            }else{
+            $("#heart").html('<i class="fa fa-heart" aria-hidden="true"></i>');
+            $("#heart").addClass("liked");
+            }
+            });
+            });
+        </script>
+        <script>
+            $('.triggerSidebar2').click(function() {
+                $('.Sidenavbar').css('right', '0px')
+                $('.overlay2').css('display', 'block')
+               })
+               
+               var kori = function() {
+               $('.overlay2').css('display', 'none')
+               $('.Sidenavbar').css('right', '-405px')
+               }
+               
+               $('.hideSidebar2').click(kori)
+               $('.overlay2').click(kori)
+        </script>
+        <script type="text/javascript">
+            $('.carosuel_').slick({
+            
+            infinite: true,
+            speed: 500,
+            arrows:false,   
+            fade: true,
+            autoplay: true,
+              autoplaySpeed: 2000,  
+            cssEase: 'linear'
+            });
+                  $('.solutions_carousel').slick({
+               dots: false,   
+              autoplay: true,
+              autoplaySpeed: 2000,  
+              arrows:false, 
+               infinite: true,
+               speed: 300,
+               slidesToShow: 4,
+               // prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+               //   nextArrow: '<button class="slide-arrow next-arrow"></button>',
+               slidesToScroll:4,
+               responsive: [
+                 {
+                   breakpoint: 1024,
+                   settings: {
+                     slidesToShow: 3,
+                     slidesToScroll: 3,
+                     infinite: true,
+                     dots: false
+                   }
+                 },
+                 {
+                   breakpoint: 600,
+                   settings: {
+                     slidesToShow: 1,
+                     slidesToScroll: 2
+                   }
+                 },
+                 {
+                   breakpoint: 480,
+                   settings: {
+                     slidesToShow: 1,
+                     slidesToScroll: 1
+                   }
+                 }
+                 // You can unslick at a given breakpoint now by adding:
+                 // settings: "unslick"
+                 // instead of a settings object
+               ]
+             });
+                 AOS.init();
+        </script>
+    </body>
 </html>
