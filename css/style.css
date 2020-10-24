@@ -384,13 +384,15 @@ main .carousel .carosuel-captions .buy-btn:hover,
 	box-shadow: 0px 10px 20px 0px rgba(0, 23, 51, 0.09);	
 }
   .Products-carosuel  .slide-arrow,
-    .Products-carosuel2  .slide-arrow{
+    .Products-carosuel2  .slide-arrow,
+     .Products-carosuel3 .slide-arrow{
   position: absolute;
 /*		*/
   margin-top: -15px;
 }
   .Products-carosuel .prev-arrow,
-   .Products-carosuel2 .prev-arrow{
+   .Products-carosuel2 .prev-arrow,
+    .Products-carosuel3 .prev-arrow{
   right: 	 8%;
   width: 0;
   height: 0;
@@ -401,7 +403,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
   right: 	50%;
 }
   .Products-carosuel  .prev-arrow::after,
-  .Products-carosuel2  .prev-arrow::after {
+  .Products-carosuel2  .prev-arrow::after ,
+     .Products-carosuel3   .prev-arrow::after{
     font-family: "Font Awesome 5 Free";
      font-weight: 900; 
      content: "\f053";
@@ -412,7 +415,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
     color: #fff;
     border-radius: 100px;
   }
- .Products-carosuel .next-arrow{
+ .Products-carosuel .next-arrow,
+      .Products-carosuel3 .next-arrow{
   right: 45%;
   width: 0;
   height: 0;
@@ -420,7 +424,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
   border: 	none;	
   background: transparent;
 }
-  .Products-carosuel  .next-arrow::after {
+  .Products-carosuel  .next-arrow::after ,
+    .Products-carosuel3  .next-arrow::after{
         font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f054";
@@ -432,7 +437,7 @@ main .carousel .carosuel-captions .buy-btn:hover,
     border-radius: 100px;
   }
   .Products-carosuel  .favourite,
-  .Products-sec .favourite,  .Products-carosuel2  .favourite,{
+  .Products-sec .favourite,  .Products-carosuel3  .favourite{
   	color: 	#F85C05;
   	position: 	absolute;	
   	top: 	5px;
@@ -880,6 +885,7 @@ header .mobile-cart{
 	margin: 	7rem 0;
 }
 .heading_back{
+	display:none;	
 	    position: absolute;
     z-index: -1;
    font-size: 70px;
@@ -1176,7 +1182,7 @@ header .mobile-cart{
             background: url(../images/back.png);
             padding-top: 50px;
             padding-bottom: 50px;
-            margin: 6rem 0;
+        /*    margin: 6rem 0;*/
             background-position: center;
             background-size: cover;
             }
