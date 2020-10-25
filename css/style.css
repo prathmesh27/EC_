@@ -1475,3 +1475,24 @@ header .mobile-cart{
 	background-size: 	35%;
 	border-radius: 	100px;
 }
+.back-attach{
+	background: url(../images/main-back.png)no-repeat;
+	
+	background-position: top left;
+}
+.back-attach2{
+	background: url(../images/parallax2.png);
+	
+	background-position: right;
+}
+.back-attach3{
+	background: url(../images/parallax2.png);
+	
+	background-position: 70%;
+}
+.back-attach4{
+	background: url(../images/parallax2.png)no-repeat;
+	
+		background-position: top left;
+		background-size: 100%
+}
