@@ -11,7 +11,7 @@ body{
 }
 header{
 	position: fixed;
-	z-index: 9999;
+	z-index: 999999;
 	width: 100%;
 }
 .overlay2 {
@@ -73,8 +73,11 @@ header .navbar .cart-section a{
 	color: #000;	
 	margin: 0 .5rem;
 }
+.carousel-indicators{
+	z-index: 99999;
+}
 .carousel-indicators li{
-	background-color: 	#F85C05;
+	background-color: 	#495E3D;
 }
 header .navbar-light .navbar-nav .nav-link{
 	padding: .3rem 1.3rem;
