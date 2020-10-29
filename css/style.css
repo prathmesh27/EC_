@@ -27,6 +27,8 @@ header{
 
 header .cart-section {
 	display: 	flex;	
+	   display: -webkit-box;
+    display: -ms-flexbox;
 }
 header .cart-section .fas,
 header .upper-header .far{
@@ -34,6 +36,8 @@ header .upper-header .far{
 }
 header .upper-header{
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	align-items: center;
 	justify-content: space-between;
 	color: #000;
@@ -55,6 +59,8 @@ header .upper-header
 header .upper-header
 .l-header,header .r-header{
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	align-items: center;
 	color: #000;
 	text-decoration: none;
@@ -80,10 +86,12 @@ header .navbar .cart-section a{
 	background-color: 	#495E3D;
 }
 header .navbar-light .navbar-nav .nav-link{
-	padding: .3rem 1.3rem;
+	padding: .2rem 1rem;
 	color: #222;
 	font-weight: 	500;
 	text-transform: 	uppercase;
+	font-size: 	14px;
+
 }
 header 
 .Sidenavbar::-webkit-scrollbar ,.product-hv::-webkit-scrollbar{
@@ -120,6 +128,8 @@ header     .Sidenavbar .side-navbar{
 header     .Sidenavbar .header{
      padding: 4% 2%;
      display: flex;
+        display: -webkit-box;
+    display: -ms-flexbox;
      align-items: center;
      justify-content: space-between;
      border-bottom: 1px solid #eee;
@@ -169,6 +179,8 @@ main .carousel .carosuel-captions	{
 	bottom: 0;
 	margin: auto;
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -262,6 +274,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 	font-weight: bold;
 	margin: 3rem 0 2rem;
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	align-items: center;
 	color: 	#0B4328;
 }
@@ -291,7 +305,7 @@ main .carousel .carosuel-captions .buy-btn:hover,
 .Cart-sec-hover a{
 	border: 	1px solid #eee;
 	background: 	#fff;
-	padding: 	1rem;
+	padding: 	.9rem;
 }
 .best-seller
 .Cart-sec-hover .fas,
@@ -302,6 +316,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 .best-seller
 .Cart-sec-hover{
 		display: 	flex;	
+		   display: -webkit-box;
+    display: -ms-flexbox;
 		align-items: 	center;	
 		justify-content: 	space-between;
     padding: 1.5rem;
@@ -318,6 +334,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 	right: 	0;
 	bottom: 	0;
 	opacity: 	0;
+	display: flex;
+	justify-content: center;
 }
 .best-seller .slick-slider{
 
@@ -346,6 +364,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 }
 .Products-sec  .Products-sec-content .price {
 	display: flex;
+
+    display: -ms-flexbox;
 	align-items: center;
 	color: #000;
 	justify-content: 	center;	
@@ -367,6 +387,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 }
 .Products-sec .add-cart{
 	display: 	flex;	
+	   display: -webkit-box;
+    display: -ms-flexbox;
 }
 .top-pro .Products-sec  .Products-sec-content .add-cart{
 	justify-content: space-between;
@@ -374,6 +396,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 .Products-sec  .Products-sec-content 
 .add-cart {
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	justify-content: flex-start;
 	align-items: center;
 	color: #F85C05;
@@ -388,14 +412,16 @@ main .carousel .carosuel-captions .buy-btn:hover,
 }
   .Products-carosuel  .slide-arrow,
     .Products-carosuel2  .slide-arrow,
-     .Products-carosuel3 .slide-arrow{
+     .Products-carosuel3 .slide-arrow,
+     .wellness-carosuel .slide-arrow{
   position: absolute;
 /*		*/
   margin-top: -15px;
 }
   .Products-carosuel .prev-arrow,
    .Products-carosuel2 .prev-arrow,
-    .Products-carosuel3 .prev-arrow{
+    .Products-carosuel3 .prev-arrow,
+    .wellness-carosuel .prev-arrow{
   right: 	 8%;
   width: 0;
   height: 0;
@@ -407,7 +433,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 }
   .Products-carosuel  .prev-arrow::after,
   .Products-carosuel2  .prev-arrow::after ,
-     .Products-carosuel3   .prev-arrow::after{
+     .Products-carosuel3   .prev-arrow::after,
+     .wellness-carosuel .prev-arrow::after {
     font-family: "Font Awesome 5 Free";
      font-weight: 900; 
      content: "\f053";
@@ -419,7 +446,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
     border-radius: 100px;
   }
  .Products-carosuel .next-arrow,
-      .Products-carosuel3 .next-arrow{
+      .Products-carosuel3 .next-arrow,
+      .wellness-carosuel .next-arrow{
   right: 45%;
   width: 0;
   height: 0;
@@ -428,7 +456,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
   background: transparent;
 }
   .Products-carosuel  .next-arrow::after ,
-    .Products-carosuel3  .next-arrow::after{
+    .Products-carosuel3  .next-arrow::after,
+    .wellness-carosuel .next-arrow::after{
         font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f054";
@@ -440,7 +469,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
     border-radius: 100px;
   }
   .Products-carosuel  .favourite,
-  .Products-sec .favourite,  .Products-carosuel3  .favourite{
+  .Products-sec .favourite,  .Products-carosuel3  .favourite,
+  .wellness-carosuel{
   	color: 	#F85C05;
   	position: 	absolute;	
   	top: 	5px;
@@ -487,6 +517,8 @@ main .carousel .carosuel-captions .buy-btn:hover,
 	align-items: center;
 	justify-content: space-between;
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 }
 .Products_inner h2{
 		color: #0B4328;	
@@ -546,6 +578,8 @@ footer{
 }
 footer .ft{
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	align-items:flex-start;
 	justify-content: space-between;
 	padding: 3rem 0 ;
@@ -627,6 +661,8 @@ footer .copy p{
 .product-description .Product-sec  .product-content .price{
 	font-size: 22px;
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	font-weight: bold;
 	color: #F85C05;
 	align-items: center;
@@ -661,6 +697,8 @@ footer .copy p{
 .product-description .Product-sec  .product-content
 .product-details  .rows{
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -732,6 +770,8 @@ footer .copy p{
 .testimonial .test img{
 	width: 30%;
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	justify-content: center;
 	margin: -70px auto 0;
 }
@@ -818,6 +858,8 @@ header .cart .qty{
 }
 footer .upper-footer{
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	justify-content: space-between;
 	align-items: center;
 	color: #000;	
@@ -833,16 +875,19 @@ footer .upper-footer .fas{
 }
 footer .links{
 	display: flex;
+	   display: -webkit-box;
+    display: -ms-flexbox;
 	align-items: center;justify-content: center;
 	flex-wrap: wrap;
 }
 footer .links ul{
 	flex-wrap: wrap;
 	display: flex;
-
+	   display: -webkit-box;
+    display: -ms-flexbox;
 }
 footer{
-	padding: 1rem 0 0;
+	/*padding: 1rem 0 0;*/
 }
 footer .links ul li {
 	list-style-type: none;
@@ -926,6 +971,8 @@ header .mobile-cart{
 }
 .why_ .rows {
     display: flex;
+       display: -webkit-box;
+    display: -ms-flexbox;
     justify-content: space-between;
     align-items: center;
 }
@@ -1498,4 +1545,28 @@ header .mobile-cart{
 	
 		background-position: top left;
 		background-size: 100%
+}
+.best-seller .wellness-carosuel .Products-sec:hover>.Cart-sec-hover{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+}
+.best-seller .wellness-carosuel .Cart-sec-hover a{
+	padding: .6rem;
+}
+.best-seller .Cart-sec-hover a:hover{
+	background: #f6f6f6;
+	transition: all .3s ease;
+}
+.best-seller .Cart-sec-hover a:hover> .fas,.best-seller .Cart-sec-hover a:hover> .far{
+	transition: all .3s ease;
+	color: #495E3D;
+}
+.wellness p{
+	font-size: 15px;
+}
+.wellness
+.nav-tabs  .nav-item{
+	margin: .4rem 0;
 }
