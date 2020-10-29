@@ -279,3 +279,19 @@
             // instead of a settings object
             ]
             });
+           $('.product-single').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.product-carosuel'
+         });
+         $('.product-carosuel').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.product-single',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true
+         });
+             
