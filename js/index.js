@@ -26,9 +26,8 @@
             $('.Products-carosuel2').slick({
             dots: false,
             arrows:true,
-            speed: 300,
             autoplay: true,
-                 autoplaySpeed: 2000, 
+                 autoplaySpeed: 4000, 
 
             slidesToShow: 4,
             infinite:true,
@@ -71,7 +70,7 @@
             speed: 300,
             slidesToShow: 4,
             autoplay: true,
-                 autoplaySpeed: 2000, 
+                 autoplaySpeed: 4000, 
             infinite:true,
             prevArrow: '<button class="slide-arrow prev-arrow"></button>',
             nextArrow: '<button class="slide-arrow next-arrow"></button>',
