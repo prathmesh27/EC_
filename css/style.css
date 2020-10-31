@@ -1109,8 +1109,8 @@ header .mobile-cart {
     text-transform: uppercase;
 }
 
-.about-content {
-    background: #fff;
+.about-content {/*
+    background: #fff;*/
     margin-right: -70px;
 }
 
@@ -1214,6 +1214,7 @@ header .mobile-cart {
 .flip-card h2 {
     font-weight: 300;
     font-size: 25px;
+    color: #fff;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -1237,6 +1238,7 @@ header .mobile-cart {
 .flip-card-front {
     /* background-color: #eee;*/
     color: #000;
+        background: #F85C05;
 }
 
 .flip-card-front,
@@ -1254,8 +1256,9 @@ header .mobile-cart {
 
 .flip-card-back {
     background-color: #fff;
-    color: #000;
+    color: #fff;
     padding: 1rem;
+    background: #495E3D;
     transform: rotateY(180deg);
 }
 
